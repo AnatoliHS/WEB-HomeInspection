@@ -1,29 +1,68 @@
-<header style="--d: flex; --jc: space-between; --ai: center">
-    <nav id="edit_bar" style="--d: none">
-      <a id="save" href="data:text, To save enable javascript." onclick="saveDOMAsHTML();return false;">Save</a>
-      <a id="edit" href="data:text, To edit enable javascript." onclick="toggleAllTextEditable();return false;"
-        >Edit</a
-      >
-      <a
-        id="toggleDrag"
-        href="data:text, To drag enable javascript."
-        onclick="return false"
-        style="--d: none; --d-sm: inline"
-        >Drag</a
-      >
-    </nav>
-    <h1><a href="/">{{ title }}</a></h1>
-    <nav>
-      <menu style="--d:none; --d-sm: flex; --cg: 0.2ch; --lis: none">
-        <li>
-          menu item 1
-        </li> - 
-        <li>
-          menu item 2
-        </li> -
-        <li>
-          menu item 3
-        </li>
-      </menu>
-    </nav>
-  </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Header</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            width: 100%;
+            justify-content:  center;
+            align-items: center;
+            background-color: #ECE2DC;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+            
+        }
+
+        .logo {
+            display: flex; 
+            align-items: center; 
+        }
+
+        .logotext {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            height: 60px; /* Adjust the size as needed */
+            margin-right: 10px; /* Space between the image and text */
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+
+        .contact-info span {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    
+        <div class="logo">
+        <img src="/assets/logo.png" alt="Logo">
+        <div class="logotext">
+    Inspection Season
+    </div>
+        </div>
+        <div class="contact-info">
+            
+        </div>
+       
+    </div>
+
+    <!-- Additional content goes here -->
+</body>
