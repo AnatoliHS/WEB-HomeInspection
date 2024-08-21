@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Home Inspection</title>
+   <style>
+        body {
+            background: url("assets/house2.jpg") no-repeat center;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;  
+            display: flex;         
+        }
+
+        .banner {
+            width: 100vw; /* Full viewport width */
+            padding: 30px;
+            font-size: 18px;
+            text-align: center;
+            color: white;
+            background-color: rgba(78, 94, 109, 0.7);
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button-container {
+            width: 100%;
+            max-width: 800px;
+            padding: 0 20px;
+            margin-bottom: 10px;
+            display: grid;
+            grid-template-columns: 1fr; /* Single column by default */
+            gap: 10px; /* Space between buttons */
+        }
+
+        .button-container button {
+            width: 100%;           
+            padding: 50px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #4E5E6D;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container button:hover {
+            background-color: #ECE2DC;
+            color: black;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                justify-content: center;
+                align-items: center;
+            }
+
+            .button-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px; /* Space between buttons */
+            }
+
+            .button-container button {
+                width: calc(50% - 20px); /* Each button takes up 50% of the container width minus the gap */
+                max-width: 400px; /* Optionally limit the button width */
+            }
+        }
+        .content{
+            width: 100%;
+            max-width: 600px; /* Adjust as needed */
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            margin: 0 auto; 
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="banner">
+        Home and Property Inspections Servicing The Greater Toronto Area
+    </div>
+
+    <div class="content-wrapper">
+        <div class="button-container">
+            <button onclick="location.href='/fees/'">FEES</button>
+            <button onclick="location.href='/home_inspect/'">HOME INSPECTION</button>
+            <button onclick="location.href='/air_inspect/'">AIR QUALITY</button>
+            <button onclick="location.href='/pool_inspect/'">POOL INSPECTION</button>
+        </div>
+    </div>
+    <div class="content">
+        <h3>Title</h3>
+        <p>We are among the top home inspection companies in the greater Toronto area with experienced and highly qualified home inspectors. If you are purchasing a property in the Toronto area, or need trusted advice before starting a renovation project contact us. Leverage the specialized training and experience of Toronto’s award winning home inspection company to provide you with the information you need to make an informed decision.</p>
+    </div>
+</body>
+
+</html>
