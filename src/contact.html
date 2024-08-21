@@ -15,49 +15,13 @@
             padding: 0;         
         }
 
-        .banner {
-            width: 100vw; /* Full viewport width */
-            padding: 30px;
-            font-size: 18px;
-            text-align: center;
-            color: white;
-            background-color: rgba(78, 94, 109, 0.7);
-            border-radius: 5px;
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
-
-        .contact-form {
-            width: calc(100% - 20px);
-            max-width: 600px; /* Adjust as needed */
-            padding: 20px 1rem;
-            background-color: rgba(255, 255, 255, 0.8); /* Light background for form */
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
-            margin: 0 auto; /* Add some margin for responsiveness */
-        }
-
-        .contact-form h2 {
-            margin-top: 0;
-            text-align: center;
-        }
-
         .contact-form label {
             display: block;
             margin-bottom: 8px;
             font-weight: bold;
         }
 
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact-form button {
+        .button {
             width: 100%;
             padding: 10px;
             font-size: 16px;
@@ -69,7 +33,7 @@
             transition: background-color 0.3s ease;
         }
 
-        .contact-form button:hover {
+        .button:hover {
             background-color: #ECE2DC;
             color: black;
         }
@@ -85,22 +49,22 @@
 </head>
 
 <body>
-    <div class="banner">
+    <div style="--w: 100vw; --p: 30px; --bgc:rgba(78, 94, 109, 0.7); --c: white; --radius: 5px; --my: 10px; --size: 18px; --ta: center;">
         CONTACT
     </div>
-    <div class="contact-form">
-        <h2>Contact Us</h2>
+    <div style="--p: 20px; --bgc: rgba(255, 255, 255, 0.8); --radius: 5px; --shadow: 0 0 10px rgba(0, 0, 0, 0.1); --m: 0 auto; --mb: 10px; --maxw: 600px; --w: calc(100% - 20px);">
+        <h2 style="--mt: 0; --ta: center;" >Contact Us</h2>
         <form action="/submit-form" method="post">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
+            <input style="--w: 100%; --p: 10px; --mb: 10px; --b: 1px solid #ccc; --radius: 5px;" type="text" id="name" name="name" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <input style="--w: 100%; --p: 10px; --mb: 10px; --b: 1px solid #ccc; --radius: 5px;" type="email" id="email" name="email" required>
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea style="--w: 100%; --p: 10px; --mb: 10px; --b: 1px solid #ccc; --radius: 5px;" id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit">Send Message</button>
+            <button class="button" type="submit">Send Message</button>
         </form>
     </div>
    
