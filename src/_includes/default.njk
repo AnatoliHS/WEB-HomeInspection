@@ -1,15 +1,20 @@
----
-title: Your 11ty Starter Site
----
 <!DOCTYPE html>
 <html lang="en">
   {% include "component/head.njk" %}
-    <body style="--maxw-md: 40rem;
+    <body style="--maxw-md: 110rem;
     --m: auto;
-    --size: 1.2rem;">
+    --size: 1.2rem;
+    min-height: 100vh;
+    --ai: center;
+    --jc: center; 
+    --d: flex; 
+    --fd: column">
+      {% include "component/navbar.njk" %}
       {% include "component/header.njk" %}
 
+      <main style="flex-grow: 1;">
       {{ content | safe }}
+      </main>
 
       {% include "component/footer.njk" %}
       {% include "component/scripts.njk" %}

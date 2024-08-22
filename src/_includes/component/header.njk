@@ -1,29 +1,40 @@
-<header style="--d: flex; --jc: space-between; --ai: center">
-    <nav id="edit_bar" style="--d: none">
-      <a id="save" href="data:text, To save enable javascript." onclick="saveDOMAsHTML();return false;">Save</a>
-      <a id="edit" href="data:text, To edit enable javascript." onclick="toggleAllTextEditable();return false;"
-        >Edit</a
-      >
-      <a
-        id="toggleDrag"
-        href="data:text, To drag enable javascript."
-        onclick="return false"
-        style="--d: none; --d-sm: inline"
-        >Drag</a
-      >
-    </nav>
-    <h1><a href="/">{{ title }}</a></h1>
-    <nav>
-      <menu style="--d:none; --d-sm: flex; --cg: 0.2ch; --lis: none">
-        <li>
-          menu item 1
-        </li> - 
-        <li>
-          menu item 2
-        </li> -
-        <li>
-          menu item 3
-        </li>
-      </menu>
-    </nav>
-  </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Header</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #ECE2DC;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    
+        <div class="logo" style="--d: flex; --ai: center; --jc: flex-start;">
+        <img style="--h: 60px; --mr: 10px;" src="/assets/logo.png" alt="Logo">
+        <div style="--size: 25px; --weight: bold;">
+        Inspection Season
+        </div>
+        </div>
+       
+       
+    </div>
+
+    <!-- Additional content goes here -->
+</body>
