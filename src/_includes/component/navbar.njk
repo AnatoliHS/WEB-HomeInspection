@@ -5,25 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Navigation Bar</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
 
-        .navbar {
+        .navbar{
             width: 100%;
             display: flex;
-            background-color: #4E5E6D;
             justify-content: flex-start;
-            padding: 5px 0;
         }
-
+     
         .navbar a {
             color: white;
-            text-decoration: none;
-            padding: 14px 20px;
-            text-align: center;
         }
 
         .navbar a:hover {
@@ -39,13 +29,13 @@
         }
     </style>
 </head>
-<body>
+<body style="--m: 0; --p:0; --ff:Arial, sans-serif;">
 
-    <div class="navbar">
-        <a href="/index/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/faq/">FAQ</a>
-        <a href="/contact/">Contact</a>
+    <div class="navbar" style=" --bgc: #4E5E6D; --p: 5px 0;">
+        <a style=" --p: 14px 20px; --ta: center; --td: none;" href="/index/">Home</a>
+        <a style=" --p: 14px 20px; --ta: center; --td: none;" href="/about/">About</a>
+        <a style=" --p: 14px 20px; --ta: center; --td: none;" href="/faq/">FAQ</a>
+        <a style=" --p: 14px 20px; --ta: center; --td: none;" href="/contact/">Contact</a>
     </div>
 
     <!-- Content goes here -->

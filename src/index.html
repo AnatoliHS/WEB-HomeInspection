@@ -1,16 +1,13 @@
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Home Inspection</title>
    <style>
         body {
-            background: url("assets/house2.jpg") no-repeat center;
+            
             flex-direction: column;  
-            display: flex;         
+               
         }
 
         .button-container {     
@@ -19,17 +16,9 @@
             gap: 10px; /* Space between buttons */
         }
 
-        .button {         
-            color: white;    
-            background-color: #4E5E6D;
+        .button {                               
             transition: background-color 0.3s ease;
         }
-
-        .button-container button:hover {
-            background-color: #ECE2DC;
-            color: black;
-        }
-
         @media (min-width: 768px) {
             body {
                 justify-content: center;
@@ -39,7 +28,6 @@
             .button-container {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
                 gap: 20px; /* Space between buttons */
             }
 
@@ -51,25 +39,25 @@
       
     </style>
 
-</head>
 
-<body style="--ai: center; --jc: center;">
+
+
     <div style="--w: 100vw; --p: 30px; --bgc:rgba(78, 94, 109, 0.7); --c: white; --radius: 5px; --my: 10px; --size: 18px; --ta: center;">
         Home and Property Inspections Servicing The Greater Toronto Area
     </div>
 
     <div style="--w: 100%; --ai: center; --fd: column; --d: flex;">
-        <div class="button-container" style="--w: 100%; --maxw: 800px; --p: 0 20px; --mb: 10px; ">
-            <button class="button" style="--size: 16px; --radius: 5px; --b: none; --cur: pointer; --p: 50px 20px;" onclick="location.href='/fees/'">FEES</button>
-            <button class="button" style="--size: 16px; --radius: 5px; --b: none; --cur: pointer; --p: 50px 20px;" onclick="location.href='/home_inspect/'">HOME INSPECTION</button>
-            <button class="button" style="--size: 16px; --radius: 5px; --b: none; --cur: pointer; --p: 50px 20px;" onclick="location.href='/air_inspect/'">AIR QUALITY</button>
-            <button class="button" style="--size: 16px; --radius: 5px; --b: none; --cur: pointer; --p: 50px 20px;" onclick="location.href='/pool_inspect/'">POOL INSPECTION</button>
+        <div class="button-container" style="--w: 100%; --maxw: 800px; --p: 0 20px; --mb: 10px; --jc: center; --d: flex; ">
+            <button class="button" style="--size: 16px; --radius: 5px; --b: none; --cur: pointer; --p: 50px 20px; --bg:#4E5E6D; --bg-hvr:#ECE2DC; --c: white; --c-hvr: black;" onclick="location.href='/fees/'">FEES</button>
+            <button class="button" style="--size: 16px; --radius: 5px; --b: none; --cur: pointer; --p: 50px 20px; --bg:#4E5E6D; --bg-hvr:#ECE2DC; --c: white; --c-hvr: black;" onclick="location.href='/home_inspect/'">HOME INSPECTION</button>
+            <button class="button" style="--size: 16px; --radius: 5px; --b: none; --cur: pointer; --p: 50px 20px; --bg:#4E5E6D; --bg-hvr:#ECE2DC; --c: white; --c-hvr: black;" onclick="location.href='/air_inspect/'">AIR QUALITY</button>
+            <button class="button" style="--size: 16px; --radius: 5px; --b: none; --cur: pointer; --p: 50px 20px; --bg:#4E5E6D; --bg-hvr:#ECE2DC; --c: white; --c-hvr: black;" onclick="location.href='/pool_inspect/'">POOL INSPECTION</button>
         </div>
     </div>
     <div  style="--p: 20px; --bgc: rgba(255, 255, 255, 0.8); --radius: 5px; --shadow: 0 0 10px rgba(0, 0, 0, 0.1); --m: 0 auto; --mb: 10px; --maxw: 600px; --w: calc(100% - 20px);">
         <h3>Title</h3>
         <p>We are among the top home inspection companies in the greater Toronto area with experienced and highly qualified home inspectors. If you are purchasing a property in the Toronto area, or need trusted advice before starting a renovation project contact us. Leverage the specialized training and experience of Toronto’s award winning home inspection company to provide you with the information you need to make an informed decision.</p>
     </div>
-</body>
 
-</html>
+
+
