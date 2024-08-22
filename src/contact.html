@@ -7,29 +7,18 @@
    <style>
         body {
             background: url("/assets/house2.jpg") no-repeat center;
-            align-items: center;
-            justify-content: center;
             flex-direction: column;  
             display: flex;
-            margin: 0;
-            padding: 0;         
+                     
         }
 
         .contact-form label {
             display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
         }
 
         .button {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
             background-color: #4E5E6D;
             color: white;
-            cursor: pointer;
             transition: background-color 0.3s ease;
         }
 
@@ -48,23 +37,23 @@
 
 </head>
 
-<body>
+<body style="--jc: center; --m: 0; --p: 0; --ai: center;">
     <div style="--w: 100vw; --p: 30px; --bgc:rgba(78, 94, 109, 0.7); --c: white; --radius: 5px; --my: 10px; --size: 18px; --ta: center;">
         CONTACT
     </div>
     <div style="--p: 20px; --bgc: rgba(255, 255, 255, 0.8); --radius: 5px; --shadow: 0 0 10px rgba(0, 0, 0, 0.1); --m: 0 auto; --mb: 10px; --maxw: 600px; --w: calc(100% - 20px);">
         <h2 style="--mt: 0; --ta: center;" >Contact Us</h2>
         <form action="/submit-form" method="post">
-            <label for="name">Name</label>
+            <label style="--mb: 8px; --weight: bold;" for="name">Name</label>
             <input style="--w: 100%; --p: 10px; --mb: 10px; --b: 1px solid #ccc; --radius: 5px;" type="text" id="name" name="name" required>
 
-            <label for="email">Email</label>
+            <label style="--mb: 8px; --weight: bold;" for="email">Email</label>
             <input style="--w: 100%; --p: 10px; --mb: 10px; --b: 1px solid #ccc; --radius: 5px;" type="email" id="email" name="email" required>
 
-            <label for="message">Message</label>
+            <label style="--mb: 8px; --weight: bold;" for="message">Message</label>
             <textarea style="--w: 100%; --p: 10px; --mb: 10px; --b: 1px solid #ccc; --radius: 5px;" id="message" name="message" rows="5" required></textarea>
 
-            <button class="button" type="submit">Send Message</button>
+            <button class="button" style="--w: 100%; --p: 10px; --size: 16px; --b: none; --radius: 5px; --cur: pointer;" type="submit">Send Message</button>
         </form>
     </div>
    
