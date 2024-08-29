@@ -39,17 +39,57 @@
       }
       body { background: url("/assets/house.jpg") no-repeat center;
       background-size: cover; 
-    background-attachment: fixed;}
+      background-attachment: fixed;
+      position: sticky;
+      }
+      
+     
       .content{
             width: calc(100% - 20px);
-            max-width: 600px; /* Adjust as needed */
-            padding: 20px 1rem;
-            background-color: rgba(255, 255, 255, 0.8); 
+            max-width: 800px; /* Adjust as needed */
+            padding: 20px 5rem;
+            background-color: rgba(255, 255, 255, 0.9); 
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); 
             margin: 0 auto; 
             margin-bottom: 10px;
         }
+        .content-fees{
+            width: calc(100% - 20px);
+            max-width: 1300px; /* Adjust as needed */
+            padding: 20px 1rem;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); 
+            margin: 0 auto; 
+            margin-bottom: 10px;
+        }
+
+        .content-about{
+            width: calc(100% - 20px);
+            max-width: 800px; /* Adjust as needed */
+            padding: 20px 1rem;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 5px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8); 
+            margin: 0 auto; 
+            margin-bottom: 10px;
+        }
+        .faq{
+          background-color: rgba(255, 255, 255, 0.9);
+           width: calc(100% - 20px); 
+           margin: 0 auto; 
+           max-width: 800px; 
+           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+           padding: 20px 1rem;
+        }
+
+         @media (max-width: 768px) {
+        .content{
+             padding: 20px 1rem;
+        }
+         }
+        
     </style>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
