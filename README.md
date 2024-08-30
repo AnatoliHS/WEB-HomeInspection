@@ -5,3 +5,5 @@ This is a simple project to get started with the amazing 11ty static site genera
 Simply clone the repo and run `make` to get started.
 
 This is my first hotfix.
+
+Home inspection.
