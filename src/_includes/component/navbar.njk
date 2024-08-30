@@ -1,43 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Navigation Bar</title>
-    <style>
-
-        .navbar{
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-        }
-     
-        .navbar a {
-            color: white;
-        }
-
-        .navbar a:hover {
-            background-color: #ECE2DC;
-            border-radius: 4px;
-            color: black;
-        }
-
-         @media (max-width: 768px) {
-            .navbar {
-                justify-content: center; 
-            }
-        }
-    </style>
-</head>
-<body style="--m: 0; --p:0; --ff:Arial, sans-serif;">
-
-    <div class="navbar" style=" --bgc: #4E5E6D; --p: 5px 0;">
-        <a style=" --p: 14px 20px; --ta: center; --td: none;" href="/index/">Home</a>
-        <a style=" --p: 14px 20px; --ta: center; --td: none;" href="/about/">About</a>
-        <a style=" --p: 14px 20px; --ta: center; --td: none;" href="/faq/">FAQ</a>
-        <a style=" --p: 14px 20px; --ta: center; --td: none;" href="/contact/">Contact</a>
-    </div>
-
-    <!-- Content goes here -->
-</body>
-</html>
+    <nav style=" --z:100; --w: 100%; --d: flex; --jc: flex-start; --pos: sticky; --top:0; flex-start; --bgc: #778899; --p: 5px 0;">
+        <a style=" --shadow-hvr: 10; --w: 110px; --p: 14px 20px; --c: white; --ta: center; --td: none; --c-hvr: black; --radius-hvr: 4px; --bg-hvr: #ECE2DC;" href="/index/">Home</a>
+        <a style=" --shadow-hvr: 10; --w: 110px;--p: 14px 20px; --c: white;--ta: center; --td: none; --c-hvr: black;  --radius-hvr: 4px; --bg-hvr: #ECE2DC;" href="/about/">About</a>
+        <a style=" --shadow-hvr: 10; --w: 110px;--p: 14px 20px; --c: white;--ta: center; --td: none; --c-hvr: black;  --radius-hvr: 4px; --bg-hvr: #ECE2DC;" href="/faq/">FAQ</a>
+        <a style=" --shadow-hvr: 10; --w: 110px;--p: 14px 20px; --c: white;--ta: center; --td: none; --c-hvr: black;  --radius-hvr: 4px; --bg-hvr: #ECE2DC;" href="/contact/">Contact</a>
+    </nav>
