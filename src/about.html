@@ -54,96 +54,29 @@
         <h5 style="--mx:30px;"><strong>Professional Affiliations</strong></h5>
         <br>
         <div class="img" style="--d: flex; --ai: center; --jc: center;">
-            <a href="#" onclick="openModal(event,'')">
+           
             <img src="/assets/OAHI2.png" style="width: 55px; height: auto; --p: 5px;  --w-lg: 120px;" alt="Description of Image 1">
-            </a>
-            <a href="#" onclick="openModal(event,'')">
+           
+           
             <img src="/assets/internachi2.png" style="width: 55px; height: auto;--p: 5px;  --w-lg: 120px;"alt="Description of Image 2">
-            </a>
-            <a href="#" onclick="openModal(event, '/assets/F3.png')">
+           
+           
             <img src="/assets/flir2.png" style="width: 55px; height: auto;--p: 5px; --w-lg: 120px;"alt="Description of Image 3">
-            </a>
-            <a href="#" onclick="openModal(event, '/assets/HIC2.png')">
+           
+            
             <img src="/assets/carson2.png" style="width: 55px; height: auto;--p: 5px;  --w-lg: 120px;"alt="Description of Image 4">
-            </a>
-            <a href="#" onclick="openModal(event,'')">
+           
+           
             <img src="/assets/homegauge2.png"style="width: 55px; height: auto;--p: 5px;  --w-lg: 120px;" alt="Description of Image 5">
-            </a>
-            <a href="#" onclick="openModal(event,'')">
+           
+           
             <img src="/assets/iac22.png"style="width: 55px; height: auto;--p: 5px;  --w-lg: 120px;" alt="Description of Image 5">
-            </a>
+           
         </div>
     </div>
-    <div id="imageModal" class="modal" >
-        <div class="modal-content" style="--w-lg: 50%;">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <img id="modalImage" class="modal-img">
-        </div>
-    </div>
+    
     <br>
 
-    <style>
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed;
-            z-index: 100;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        
-        .modal-content {
-            background-color: #fefefe;
-            margin: 2% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 80%;
-            border-radius: 10px;
-        }
-
-        .modal-img {
-        width: 650px; /* Desired width for the image in the modal */
-        height: auto; /* Maintain aspect ratio */
-         }
-        
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        </style>
-        <script>
-          function openModal(event, imagePath) {
-            event.preventDefault(); // Prevent default behavior of the anchor tag
-
-            const modal = document.getElementById("imageModal");
-            const modalImage = document.getElementById("modalImage");
-
-            modalImage.src = imagePath; // Set the image path
-            modal.style.display = "block"; // Show the modal
-
-            // Prevent the body from scrolling when the modal is open
-            document.body.style.overflow = "hidden";
-        }
-
-            function closeModal() {
-                const modal = document.getElementById("imageModal");
-                modal.style.display = "none"; // Hide the modal
-
-                // Restore the body's scrolling
-                document.body.style.overflow = "";
-            }
-        </script>
+   
    
 
