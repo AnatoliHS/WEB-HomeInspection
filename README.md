@@ -1,6 +1,6 @@
 # Home Inspection Site
 
-## v1.0.0
+## v1.2.0
 
 This is a simple project to get started with the amazing 11ty static site generator and Startr.Style
 
